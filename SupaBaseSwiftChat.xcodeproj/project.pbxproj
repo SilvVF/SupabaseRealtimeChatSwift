@@ -14,6 +14,10 @@
 		B520A9CD2932AA810023B84B /* SupaBaseSwiftChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9CC2932AA810023B84B /* SupaBaseSwiftChatTests.swift */; };
 		B520A9D72932AA810023B84B /* SupaBaseSwiftChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9D62932AA810023B84B /* SupaBaseSwiftChatUITests.swift */; };
 		B520A9D92932AA810023B84B /* SupaBaseSwiftChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9D82932AA810023B84B /* SupaBaseSwiftChatUITestsLaunchTests.swift */; };
+		B520A9E72932AB610023B84B /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B520A9E62932AB610023B84B /* Supabase */; };
+		B520A9ED2932AF360023B84B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9EC2932AF360023B84B /* Repository.swift */; };
+		B520A9EF2932BC1E0023B84B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9EE2932BC1E0023B84B /* MainViewModel.swift */; };
+		B5D1EC80294159EB00E45AB9 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D1EC7F294159EB00E45AB9 /* keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,9 @@
 		B520A9D22932AA810023B84B /* SupaBaseSwiftChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SupaBaseSwiftChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B520A9D62932AA810023B84B /* SupaBaseSwiftChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupaBaseSwiftChatUITests.swift; sourceTree = "<group>"; };
 		B520A9D82932AA810023B84B /* SupaBaseSwiftChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupaBaseSwiftChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B520A9EC2932AF360023B84B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B520A9EE2932BC1E0023B84B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B5D1EC7F294159EB00E45AB9 /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B520A9E72932AB610023B84B /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +82,7 @@
 		B520A9AF2932AA800023B84B = {
 			isa = PBXGroup;
 			children = (
+				B5D1EC7F294159EB00E45AB9 /* keys.plist */,
 				B520A9BA2932AA800023B84B /* SupaBaseSwiftChat */,
 				B520A9CB2932AA810023B84B /* SupaBaseSwiftChatTests */,
 				B520A9D52932AA810023B84B /* SupaBaseSwiftChatUITests */,
@@ -94,8 +103,8 @@
 		B520A9BA2932AA800023B84B /* SupaBaseSwiftChat */ = {
 			isa = PBXGroup;
 			children = (
-				B520A9BB2932AA800023B84B /* SupaBaseSwiftChatApp.swift */,
-				B520A9BD2932AA800023B84B /* ContentView.swift */,
+				B520A9E92932ACE60023B84B /* ui */,
+				B520A9E82932ACD90023B84B /* data */,
 				B520A9BF2932AA810023B84B /* Assets.xcassets */,
 				B520A9C12932AA810023B84B /* Preview Content */,
 			);
@@ -127,6 +136,24 @@
 			path = SupaBaseSwiftChatUITests;
 			sourceTree = "<group>";
 		};
+		B520A9E82932ACD90023B84B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B520A9EC2932AF360023B84B /* Repository.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B520A9E92932ACE60023B84B /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				B520A9BD2932AA800023B84B /* ContentView.swift */,
+				B520A9BB2932AA800023B84B /* SupaBaseSwiftChatApp.swift */,
+				B520A9EE2932BC1E0023B84B /* MainViewModel.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +170,9 @@
 			dependencies = (
 			);
 			name = SupaBaseSwiftChat;
+			packageProductDependencies = (
+				B520A9E62932AB610023B84B /* Supabase */,
+			);
 			productName = SupaBaseSwiftChat;
 			productReference = B520A9B82932AA800023B84B /* SupaBaseSwiftChat.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +245,9 @@
 				Base,
 			);
 			mainGroup = B520A9AF2932AA800023B84B;
+			packageReferences = (
+				B520A9E52932AB610023B84B /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = B520A9B92932AA800023B84B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +266,7 @@
 			files = (
 				B520A9C32932AA810023B84B /* Preview Assets.xcassets in Resources */,
 				B520A9C02932AA810023B84B /* Assets.xcassets in Resources */,
+				B5D1EC80294159EB00E45AB9 /* keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B520A9EF2932BC1E0023B84B /* MainViewModel.swift in Sources */,
 				B520A9BE2932AA800023B84B /* ContentView.swift in Sources */,
 				B520A9BC2932AA800023B84B /* SupaBaseSwiftChatApp.swift in Sources */,
+				B520A9ED2932AF360023B84B /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SupaBaseSwiftChat/Preview Content\"";
+				DEVELOPMENT_TEAM = RYGYN9QM8C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -424,6 +461,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,6 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SupaBaseSwiftChat/Preview Content\"";
+				DEVELOPMENT_TEAM = RYGYN9QM8C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -452,6 +491,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +617,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B520A9E52932AB610023B84B /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B520A9E62932AB610023B84B /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B520A9E52932AB610023B84B /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B520A9B02932AA800023B84B /* Project object */;
 }
