@@ -15,7 +15,7 @@
 		B520A9D72932AA810023B84B /* SupaBaseSwiftChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9D62932AA810023B84B /* SupaBaseSwiftChatUITests.swift */; };
 		B520A9D92932AA810023B84B /* SupaBaseSwiftChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9D82932AA810023B84B /* SupaBaseSwiftChatUITestsLaunchTests.swift */; };
 		B520A9E72932AB610023B84B /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B520A9E62932AB610023B84B /* Supabase */; };
-		B520A9ED2932AF360023B84B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9EC2932AF360023B84B /* Repository.swift */; };
+		B520A9ED2932AF360023B84B /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9EC2932AF360023B84B /* ChatService.swift */; };
 		B520A9EF2932BC1E0023B84B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9EE2932BC1E0023B84B /* MainViewModel.swift */; };
 		B5D1EC80294159EB00E45AB9 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D1EC7F294159EB00E45AB9 /* keys.plist */; };
 /* End PBXBuildFile section */
@@ -48,7 +48,7 @@
 		B520A9D22932AA810023B84B /* SupaBaseSwiftChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SupaBaseSwiftChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B520A9D62932AA810023B84B /* SupaBaseSwiftChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupaBaseSwiftChatUITests.swift; sourceTree = "<group>"; };
 		B520A9D82932AA810023B84B /* SupaBaseSwiftChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupaBaseSwiftChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B520A9EC2932AF360023B84B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B520A9EC2932AF360023B84B /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		B520A9EE2932BC1E0023B84B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		B5D1EC7F294159EB00E45AB9 /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,7 +139,7 @@
 		B520A9E82932ACD90023B84B /* data */ = {
 			isa = PBXGroup;
 			children = (
-				B520A9EC2932AF360023B84B /* Repository.swift */,
+				B520A9EC2932AF360023B84B /* ChatService.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 				B520A9EF2932BC1E0023B84B /* MainViewModel.swift in Sources */,
 				B520A9BE2932AA800023B84B /* ContentView.swift in Sources */,
 				B520A9BC2932AA800023B84B /* SupaBaseSwiftChatApp.swift in Sources */,
-				B520A9ED2932AF360023B84B /* Repository.swift in Sources */,
+				B520A9ED2932AF360023B84B /* ChatService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
