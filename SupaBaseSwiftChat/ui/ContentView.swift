@@ -18,14 +18,13 @@ struct ContentView : View {
     
     func getColor(c: Int) -> Color {
         switch(c) {
-        case 0:
-            return Color.blue
-        case 1:
-            return Color.red
-        case 2:
-            return Color.yellow
-        default:
-            return Color.orange
+        case 0: return Color.gray
+        case 1: return Color.blue
+        case 2: return Color.green
+        case 3: return Color.purple
+        case 4: return Color.cyan
+        case 5: return Color.yellow
+        default: return Color.red
         }
     }
     

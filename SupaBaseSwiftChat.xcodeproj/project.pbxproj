@@ -17,7 +17,7 @@
 		B520A9E72932AB610023B84B /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B520A9E62932AB610023B84B /* Supabase */; };
 		B520A9ED2932AF360023B84B /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9EC2932AF360023B84B /* ChatService.swift */; };
 		B520A9EF2932BC1E0023B84B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9EE2932BC1E0023B84B /* MainViewModel.swift */; };
-		B5D1EC80294159EB00E45AB9 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D1EC7F294159EB00E45AB9 /* keys.plist */; };
+		B5D1EC8229416E8200E45AB9 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D1EC8129416E8200E45AB9 /* keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		B520A9D82932AA810023B84B /* SupaBaseSwiftChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupaBaseSwiftChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B520A9EC2932AF360023B84B /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		B520A9EE2932BC1E0023B84B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		B5D1EC7F294159EB00E45AB9 /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
+		B5D1EC8129416E8200E45AB9 /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 		B520A9AF2932AA800023B84B = {
 			isa = PBXGroup;
 			children = (
-				B5D1EC7F294159EB00E45AB9 /* keys.plist */,
+				B5D1EC8129416E8200E45AB9 /* keys.plist */,
 				B520A9BA2932AA800023B84B /* SupaBaseSwiftChat */,
 				B520A9CB2932AA810023B84B /* SupaBaseSwiftChatTests */,
 				B520A9D52932AA810023B84B /* SupaBaseSwiftChatUITests */,
@@ -266,7 +266,7 @@
 			files = (
 				B520A9C32932AA810023B84B /* Preview Assets.xcassets in Resources */,
 				B520A9C02932AA810023B84B /* Assets.xcassets in Resources */,
-				B5D1EC80294159EB00E45AB9 /* keys.plist in Resources */,
+				B5D1EC8229416E8200E45AB9 /* keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
