@@ -18,8 +18,8 @@ struct ContentView : View {
     
     func getColor(c: Int) -> Color {
         switch(c) {
-        case 0: return Color.gray
-        case 1: return Color.blue
+        case 0:return Color.gray
+        case 1:return Color.blue
         case 2: return Color.green
         case 3: return Color.purple
         case 4: return Color.cyan
@@ -48,8 +48,10 @@ struct ContentView : View {
                 }
             }
             TextField("Name", text: $name)
+                .showClearButton($name)
                 .padding(8)
             TextField("Enter a message", text: $userMessage)
+                .showClearButton($userMessage)
                 .padding(8)
             Button(
                 action: {
@@ -64,13 +66,31 @@ struct ContentView : View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView(
-            messages: [],
-            onClick: {
-                _, _ in
+struct TextFieldClearButton: ViewModifier {
+    @Binding var fieldText: String
+
+    func body(content: Content) -> some View {
+        content
+            .overlay {
+                if !fieldText.isEmpty {
+                    HStack {
+                        Spacer()
+                        Button {
+                            fieldText = ""
+                        } label: {
+                            Image(systemName: "multiply.circle.fill")
+                        }
+                        .foregroundColor(.secondary)
+                        .padding(.trailing, 4)
+                    }
+                }
             }
-        )
     }
 }
+
+extension View {
+    func showClearButton(_ text: Binding<String>) -> some View {
+        self.modifier(TextFieldClearButton(fieldText: text))
+    }
+}
+
