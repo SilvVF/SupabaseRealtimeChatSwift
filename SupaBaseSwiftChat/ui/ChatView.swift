@@ -41,8 +41,9 @@ struct ChatView : View {
                                 .foregroundColor(
                                     color
                                 )
-                                .padding(8)
+                                .padding(4)
                             Text(message.content)
+                                .padding(4)
                         }
                     }
                 }
