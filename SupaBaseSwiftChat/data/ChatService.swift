@@ -15,15 +15,21 @@ class ChatService {
     
     let color = (0...6).randomElement()
     
-    init() {
+    init(urlString: String, key: String) {
+        client = SupabaseClient(
+            supabaseURL: URL(string: urlString)!,
+            supabaseKey: key
+        )
+    }
+    
+    convenience init() {
         var nsDictionary: NSDictionary?
         if let path = Bundle.main.path(forResource: "keys", ofType: "plist") {
            nsDictionary = NSDictionary(contentsOfFile: path)
         }
-        client = SupabaseClient(
-            supabaseURL: URL(string: nsDictionary!["url"]! as! String)!,
-            supabaseKey:nsDictionary!["apikey"]! as! String
-        )
+        let url = nsDictionary!["url"]! as! String
+        let key = nsDictionary!["apikey"]! as! String
+        self.init(urlString: url, key: key)
     }
     
     func sendMessage(
