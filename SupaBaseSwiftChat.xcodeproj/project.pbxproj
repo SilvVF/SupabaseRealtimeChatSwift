@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B520A9BC2932AA800023B84B /* SupaBaseSwiftChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9BB2932AA800023B84B /* SupaBaseSwiftChatApp.swift */; };
-		B520A9BE2932AA800023B84B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9BD2932AA800023B84B /* ContentView.swift */; };
+		B520A9BE2932AA800023B84B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9BD2932AA800023B84B /* ChatView.swift */; };
 		B520A9C02932AA810023B84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B520A9BF2932AA810023B84B /* Assets.xcassets */; };
 		B520A9C32932AA810023B84B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B520A9C22932AA810023B84B /* Preview Assets.xcassets */; };
 		B520A9CD2932AA810023B84B /* SupaBaseSwiftChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9CC2932AA810023B84B /* SupaBaseSwiftChatTests.swift */; };
@@ -18,6 +18,7 @@
 		B520A9ED2932AF360023B84B /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9EC2932AF360023B84B /* ChatService.swift */; };
 		B520A9EF2932BC1E0023B84B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520A9EE2932BC1E0023B84B /* MainViewModel.swift */; };
 		B5D1EC8229416E8200E45AB9 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D1EC8129416E8200E45AB9 /* keys.plist */; };
+		B5D1EC842941787700E45AB9 /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1EC832941787700E45AB9 /* types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 /* Begin PBXFileReference section */
 		B520A9B82932AA800023B84B /* SupaBaseSwiftChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupaBaseSwiftChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B520A9BB2932AA800023B84B /* SupaBaseSwiftChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupaBaseSwiftChatApp.swift; sourceTree = "<group>"; };
-		B520A9BD2932AA800023B84B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B520A9BD2932AA800023B84B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		B520A9BF2932AA810023B84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B520A9C22932AA810023B84B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B520A9C82932AA810023B84B /* SupaBaseSwiftChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SupaBaseSwiftChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +52,7 @@
 		B520A9EC2932AF360023B84B /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		B520A9EE2932BC1E0023B84B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		B5D1EC8129416E8200E45AB9 /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
+		B5D1EC832941787700E45AB9 /* types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				B520A9EC2932AF360023B84B /* ChatService.swift */,
+				B5D1EC832941787700E45AB9 /* types.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -147,7 +150,7 @@
 		B520A9E92932ACE60023B84B /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				B520A9BD2932AA800023B84B /* ContentView.swift */,
+				B520A9BD2932AA800023B84B /* ChatView.swift */,
 				B520A9BB2932AA800023B84B /* SupaBaseSwiftChatApp.swift */,
 				B520A9EE2932BC1E0023B84B /* MainViewModel.swift */,
 			);
@@ -292,7 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B520A9EF2932BC1E0023B84B /* MainViewModel.swift in Sources */,
-				B520A9BE2932AA800023B84B /* ContentView.swift in Sources */,
+				B520A9BE2932AA800023B84B /* ChatView.swift in Sources */,
+				B5D1EC842941787700E45AB9 /* types.swift in Sources */,
 				B520A9BC2932AA800023B84B /* SupaBaseSwiftChatApp.swift in Sources */,
 				B520A9ED2932AF360023B84B /* ChatService.swift in Sources */,
 			);

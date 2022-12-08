@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView : View {
+struct ChatView : View {
 
 
     var messages: [IncomingMessage]

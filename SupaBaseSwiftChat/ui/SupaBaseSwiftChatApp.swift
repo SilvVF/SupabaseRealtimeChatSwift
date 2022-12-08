@@ -18,7 +18,7 @@ struct SupaBaseSwiftChatApp: App {
         
         
         WindowGroup {
-            ContentView(
+            ChatView(
                 messages: viewModel.messages,
                 onClick: { sender, message in
                     viewModel.sendMessage(sender: sender, content: message)

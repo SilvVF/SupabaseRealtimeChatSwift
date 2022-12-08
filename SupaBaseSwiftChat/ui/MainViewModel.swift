@@ -41,11 +41,3 @@ class MainViewModel: ObservableObject {
         }
     }
 }
-
-struct IncomingMessage: Codable, Identifiable {
-    let color: Int
-    let content: String
-    let id: String
-    let sender: String
-    let time: String
-}

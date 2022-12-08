@@ -33,12 +33,10 @@ class ChatService {
         do {
             try await client.database.from("messages")
                 .insert(values:
-                            Message(
-                                sender: sender,
-                                content: content,
-                                color: color,
-                                timestamp: nil
-                            )
+                    OutgoingMessage(
+                        sender: sender.ifEmpty { "anon-user" },
+                        content: content.ifEmpty { "I have no message" }
+                    )
                 )
                 .execute()
         } catch {
@@ -56,9 +54,12 @@ class ChatService {
       }
 }
 
-struct Message: Codable {
-    let sender: String
-    let content: String
-    var color: Int? = 0
-    var timestamp: String? = nil
+extension String {
+    func ifEmpty(task: () -> String) -> String {
+        if (self.isEmpty) {
+            return task()
+        }
+        return self
+    }
 }
+
